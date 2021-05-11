@@ -7,6 +7,58 @@
     <title>Document</title>
 </head>
 <body>
-    this is another file
+    this is another file new file by creting me hello from new branch
+    these are new changes
+    <style>
+        .container{
+            font-size: 23px;
+            background-color: rgb(121, 170, 199);
+            border: 2ps solid gray;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+    <body>
+        <div class="container">
+            current time is <span id="time"> </span>
+        </div>
+        <script>
+            console.log("this is date and time tutorial");
+            let now = new Date();
+            console.log(now);
+    
+            let dt = new Date(1000);
+            console.log(dt);
+    
+            let newDate = new Date(3020, 4, 6, 9, 3, 2, 34);
+            console.log(newDate);
+    
+            let yr = newDate.getFullYear();
+            console.log("the year is ", yr);
+    
+            
+            let dat = newDate.getDate();
+            console.log("the date is ", dat);
+    
+            
+            let month = newDate.getMonth();
+            console.log("the month is ", month);
+    
+            
+            let hours = newDate.getHours();
+            console.log("the hours is ", hours);
+    
+            newDate.setDate(5);
+            newDate.setMinutes(20);
+            console.log(newDate);
+            setInterval(updateTime, 1000);
+            function updateTime(){
+            time.innerHTML = new Date();
+            }
+        </script>
 </body>
 </html>
